@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.nav-container {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    flex: 1;
+}
+.nav-logo img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    object-position: center;
+}
+.nav-logo h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav-menu-items {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+.nav-menu-items li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+.nav-right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+button {
+    all: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0.6rem 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.sign-in {
+    font-weight: bold;
+}
+.sign-up {
+    color: rgba(245, 56, 85, 1);
+    border: 1px solid rgba(245, 56, 85, 1);
+    border-radius: 50px;
+    font-weight: 500;
+}
+.app_cover {
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+    gap: 2rem;
+}
+.app_cover-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.app_cover-left h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+}
+.app_cover-left h2 span {
+    font-size: 60px;
+    color: #F53838;
+}
+.app_cover-left p {
+    font-weight: 400;   
+    font-size: 16px;
+    line-height: 30px;
+}
+.get-started {
+    all: unset;
+    padding: 0.8rem 3rem;
+    background: #F53838;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.app_cover-img {
+    width: 100%;
+}
+.app_cover-img img {
+    object-fit: cover;
+    object-position: cover;
+}
+.app_details {
+    padding: 3rem 4.5rem;
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
+}
+.app_details-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.app_features {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+.app_features-info {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.app_features-info h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+.app_features-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.app_features-info ul li {
+    list-style-type: none;
+}
+.app_features-info ul li div {
+    display: flex;
+    gap: 1rem;
+}
+.app_plans {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%;
+    margin: 2rem auto;
+    align-items: center;
+}
+.app_plans-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+.app_plan {
+    flex: 30%;
+    flex-grow: 1;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #dddddd;
+    text-align: center;
+    border-radius: 10px;
+}
+.app_plan-premium {
+    border-color: #F53838;
+}
+.app_plan-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.app_plan-info ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.app_plan-info ul li div {
+    display: flex;
+    gap: 1rem;
+}
+.app_plan-price button {
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+}
+.app_plan-info .plan-img {
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+    align-self: center;
+}
+.app_map {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.app_map-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.app_map-text h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+.app_map-text p {
+    max-width: 60%;
+}
+.app_map-text p span {
+    font-weight: 600;
+}
+.app_map-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app_testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 80%;
+    margin: 2rem auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 12rem;
+}
+.app_testimonials-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.app_testimonials-comments {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+.app_testimonial-comment {
+    flex: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+}
+.app_testimonials .app_testimonial-comment:first-child {
+    border-color: #F53838;
+}
+.app_testimonial-comment > p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+.testimonial_comment-head {
+    display: flex;
+    justify-content: space-between;
+}
+.comment-head-left {
+    display: flex;
+    gap: 10px;
+}
+.testimonial_comment-username h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.testimonial_comment-username p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.comment-head-left div {
+    text-align: left;
+    margin: auto;
+}
+.comment-head-left img {
+    height: 50px;
+    width: 50px;
+}
+.testimonial_comment-rating {
+    display: flex;
+    gap: 6px;
+}
+.testimonial_comment-rating h2 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: auto;
+}
+.testimonial_comment-rating img {
+    width: 16px;
+    height: 16px;
+    margin: auto;
+}
+.app_testimonials-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app_testimonials-bottom-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.app_newsletter {
+    width: 80%;
+    padding: 3rem 3.5rem;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 24px 50px 0px;
+}
+.app_newsletter-left h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+}
+.app_newsletter-left p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+.app_newsletter button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0.8rem 3.2rem;
+}
+.app_footer {
+    position: relative;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    padding: 12rem 10% 6rem 10%;
+}
+.app_footer section {
+    position: absolute;
+    top: -210px;
+}
+.app_footer-left {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.app_footer-left > div:first-child {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.app_footer-left  p {
+    font-weight: 400;  
+    font-size: 16px;
+    line-height: 30px; 
+}
+.footer-socials {
+    display: flex;
+    gap: 18px;
+}
+.footer-socials img {
+    border-radius: 50%;
+}
+.app_footer-left p:last-child {
+    color: rgba(175, 181, 192, 1);
+}
+.app_footer-right {
+    flex: 60%;
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-end;
+}
+.app_footer-right .footer-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.app_footer-right .footer-list li:first-child {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.app_footer-right .footer-list li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
